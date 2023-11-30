@@ -1,3 +1,7 @@
+src/environments/environment.ts
+.angular
+documentation
+
 # Logs
 logs
 *.log

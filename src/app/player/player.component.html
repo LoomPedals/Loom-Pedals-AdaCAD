@@ -1,0 +1,39 @@
+<mat-accordion id="player-container">
+  <mat-expansion-panel
+    [expanded] = "playOpen"
+    (opened) = "playOpen = true"
+    (closed) = "playOpen = false"
+    (afterCollapse)="resizeContainer()"
+    (afterExpand)="resizeContainer()">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        {{ playOpen? 'Close' : 'Open'}} Player
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+
+    <div id="player-content" class="player">
+
+      <div class="first-row">
+        <app-weaving-state></app-weaving-state>
+      </div>
+      
+      <div class="break"></div>
+
+      <div class="second-row">
+        
+      
+       <!-- [matTooltip]="`Loom must be online AND one pedal must be set to 'forward'`"> -->
+        
+        <!-- <div id="draft-container" class="player-field">
+          <h2 class="player-field-header">Draft</h2>
+          <canvas class="draft-field" id="active-draft-canvas"></canvas>
+        </div> -->
+      </div>
+    </div>
+
+    <app-virtual-pedals></app-virtual-pedals>
+    
+  </mat-expansion-panel>
+
+</mat-accordion>
+

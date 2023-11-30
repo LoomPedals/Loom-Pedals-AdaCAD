@@ -1,0 +1,128 @@
+
+.second-row { 
+  flex-wrap: wrap;
+  display: flex;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.sequencer-block, .op-block {
+  display: inline-block;
+}
+
+.player-field-header {
+  padding: 14px;
+  margin: unset;
+  background: #3f51b5;
+  color: #ffffff;
+}
+
+.sequencer-block {
+  height: inherit;
+  flex: 1;
+}
+
+.op-menu-block {
+  display: block;
+  max-width: 210px;
+}
+
+#opChains {
+  display: flex;
+}
+
+.op-field h3{
+  width: 95%;
+  font-size: 100%;
+  font-weight: bold;
+  padding: 20px 0px 10px 14px;
+}
+
+.op-field  p{
+  width: 95%;
+  font-size: .8em;
+  padding: 0px 0px 10px 14px;
+}
+
+.op-field{
+  display: flex;
+  flex-direction: column;
+}
+
+.operation-sequence {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  padding: 10px;
+}
+
+.operation-box {
+  background-color: #bbc5ff;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 10px;
+}
+
+.selected-operation-box {
+  background-color: #f6ff00;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 10px;
+}
+
+
+.mat-button {
+  background-color: #ff4081;
+  color: white;
+  width: inherit;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.square-corners {
+  border-radius: 0pt;
+  border-bottom-left-radius: 0pt;
+  border-bottom-right-radius: 0pt;
+  border-top-left-radius: 0pt;
+  border-top-right-radius: 0pt;
+}
+
+.mat-button.mat-button-disabled {
+  background-color: #fd6d9d;
+  color: rgba(255, 255, 255, 0.50);
+  
+}
+
+.mat-expansion-panel-header, 
+.mat-expansion-panel-header.mat-expanded:focus {
+  background: #121f6b;
+}
+
+.mat-expansion-panel-body {
+  padding: 0px;
+}
+
+.mat-expansion-panel, .mat-accordion, .mat-expansion-panel-header,
+.mat-accordion .mat-expansion-panel:last-of-type, 
+.mat-accordion .mat-expansion-panel:first-of-type, #operations-menu {
+  border: #ffffff 1px;
+  border-radius: 0pt;
+  border-bottom-left-radius: 0pt;
+  border-bottom-right-radius: 0pt;
+  border-top-left-radius: 0pt;
+  border-top-right-radius: 0pt;
+  border-bottom: 0pt;
+}
+
+.mat-expansion-panel-header:hover, 
+.mat-expansion-panel-header.mat-expanded:hover,
+.mat-expansion-panel:not(.mat-expanded), 
+.mat-expansion-panel-header:hover:not([aria-disabled=true])   {
+  background: #566be2;
+}
+
+.mat-expansion-panel-header-title, .mat-expansion-indicator, .mat-expansion-indicator::after, .mat-expansion-indicator.ng-tns-c130-8.ng-trigger.ng-trigger-indicatorRotate.ng-star-inserted::after, #op-header.mat-expansion-indicator::after {
+  color: white;
+}
