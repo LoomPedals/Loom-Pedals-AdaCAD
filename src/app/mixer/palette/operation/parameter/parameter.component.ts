@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { AbstractControl, FormControl, FormGroupDirective, NgForm, ValidationErrors, ValidatorFn, Validators } from '@angular/forms';
+import { AbstractControl, UntypedFormControl, FormGroupDirective, NgForm, ValidationErrors, ValidatorFn, Validators } from '@angular/forms';
 import { BoolParam, DraftParam, FileParam, NumParam, SelectParam, StringParam, OpNode } from '../../../../core/model/datatypes';
 import {TreeService } from '../../../provider/tree.service';
 
@@ -21,7 +21,7 @@ export function regexValidator(nameRe: RegExp): ValidatorFn {
 })
 export class ParameterComponent implements OnInit {
   
-  fc: FormControl;
+  fc: UntypedFormControl;
   opnode: OpNode;
   name: any;
 
@@ -53,33 +53,33 @@ export class ParameterComponent implements OnInit {
       switch(this.param.type){
         case 'number':
           this.numparam = <NumParam> this.param;
-          this.fc = new FormControl(this.param.value);
+          this.fc = new UntypedFormControl(this.param.value);
           break;
 
         case 'boolean':
           this.boolparam = <BoolParam> this.param;
-          this.fc = new FormControl(this.param.value);
+          this.fc = new UntypedFormControl(this.param.value);
           break;
 
         case 'select':
           
           this.selectparam = <SelectParam> this.param;
-          this.fc = new FormControl(this.param.value);
+          this.fc = new UntypedFormControl(this.param.value);
           break;
 
         case 'file':
           this.fileparam = <FileParam> this.param;
-          this.fc = new FormControl(this.param.value);
+          this.fc = new UntypedFormControl(this.param.value);
           break;
 
         case 'string':
           this.stringparam = <StringParam> this.param;
-          this.fc = new FormControl(this.stringparam.value, [Validators.required, regexValidator((<StringParam>this.param).regex)]);
+          this.fc = new UntypedFormControl(this.stringparam.value, [Validators.required, regexValidator((<StringParam>this.param).regex)]);
           break;
 
         case 'draft':
           this.draftparam = <DraftParam> this.param;
-          this.fc = new FormControl(this.draftparam.value);
+          this.fc = new UntypedFormControl(this.draftparam.value);
           break;
          
        
