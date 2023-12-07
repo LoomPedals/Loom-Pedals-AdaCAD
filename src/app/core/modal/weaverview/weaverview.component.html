@@ -15,13 +15,12 @@
   
     <div class="view_slider">
       <button mat-icon-button><i class="fas fa-search-plus"></i></button>
-      <mat-slider invert
-    tickInterval=".1" 
+      <!-- TODO: The 'invert' property no longer exists -->
+      <!-- TODO: The 'tickInterval' property no longer exists -->
+      <mat-slider 
     step=".1"
     min="0" 
-    max="2" 
-    value="{{render.zoom}}" 
-    (change)="zoomChange($event, 'slider')"></mat-slider>
+    max="2" #ngSlider><input matSliderThumb value="{{render.zoom}}" (change)="zoomChange({source: ngSliderThumb, parent: ngSlider, value: ngSliderThumb.value}, 'slider')" #ngSliderThumb="matSliderThumb" /></mat-slider>
     <button mat-icon-button><i class="fas fa-search-minus"></i></button>
   </div>  
 

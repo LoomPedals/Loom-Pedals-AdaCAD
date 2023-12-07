@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { MatLegacyDialog as MatDialog, MatLegacyDialogConfig as MatDialogConfig } from "@angular/material/legacy-dialog";
+import { MatDialog, MatDialogConfig } from "@angular/material/dialog";
 import { PatternModal } from '../../modal/pattern/pattern.modal';
 import { Pattern } from '../../../core/model/pattern';
 import { PatternService } from '../../../core/provider/pattern.service';

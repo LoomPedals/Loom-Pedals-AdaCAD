@@ -16,14 +16,12 @@
         <i class="fas fa-search-plus"></i>
       
     
+          <!-- TODO: The 'invert' property no longer exists -->
+          <!-- TODO: The 'tickInterval' property no longer exists -->
           <mat-slider 
-          invert
-          tickInterval="1" 
           step=".1" 
           min="1" 
-          max="15" 
-          value="{{zoom}}" 
-          (change)="zoomChange($event, 'slider')"></mat-slider>
+          max="15" #ngSlider><input matSliderThumb value="{{zoom}}" (change)="zoomChange({source: ngSliderThumb, parent: ngSlider, value: ngSliderThumb.value}, 'slider')" #ngSliderThumb="matSliderThumb" /></mat-slider>
           
           <i class="fas fa-search-minus"></i> 
       </div>

@@ -1,5 +1,5 @@
 import { Component, HostListener, Inject, OnInit, ViewChild } from '@angular/core';
-import { MatLegacyDialogRef as MatDialogRef, MAT_LEGACY_DIALOG_DATA as MAT_DIALOG_DATA } from '@angular/material/legacy-dialog';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Draft, Loom, LoomSettings } from '../../../core/model/datatypes';
 import { numFrames, numTreadles } from '../../../core/model/looms';
 import {wefts, warps} from '../../../core/model/drafts'

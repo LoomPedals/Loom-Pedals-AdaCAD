@@ -15,7 +15,7 @@ import { MaterialsService } from '../core/provider/materials.service';
 import { SystemsService } from '../core/provider/systems.service';
 import { HttpClient } from '@angular/common/http';
 import { InitModal } from '../core/modal/init/init.modal';
-import { MatLegacyDialog as MatDialog } from '@angular/material/legacy-dialog';
+import { MatDialog } from '@angular/material/dialog';
 import { AuthService } from '../core/provider/auth.service';
 import {getDatabase, ref as fbref, get as fbget, child} from '@angular/fire/database'
 import {getAnalytics, logEvent} from '@angular/fire/analytics'

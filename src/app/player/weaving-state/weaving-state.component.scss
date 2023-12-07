@@ -98,7 +98,7 @@
   padding: 10px;
 }
 
-.pedal-box-row > .mat-form-field, .mat-option {
+.pedal-box-row > .mat-mdc-form-field, .mat-mdc-option {
   width: 130px;
 }
 
@@ -106,7 +106,7 @@
   padding: 2px;
 }
 
-.mat-button {
+.mat-mdc-button {
   background-color: #ff4081;
   color: white;
   width: inherit;
@@ -114,7 +114,8 @@
   margin-right: 10px;
 }
 
-.mat-button.mat-button-disabled {
+/*TODO(mdc-migration): The following rule targets internal classes of button that may no longer apply for the MDC version.*/
+.mat-mdc-button.mat-button-disabled {
   background-color: #fd6d9d;
   color: rgba(255, 255, 255, 0.50);
   

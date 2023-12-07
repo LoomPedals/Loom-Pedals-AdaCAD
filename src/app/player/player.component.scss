@@ -35,7 +35,7 @@
 }
 
 
-.mat-button {
+.mat-mdc-button {
   background-color: #ff4081;
   color: white;
   width: inherit;
@@ -43,7 +43,8 @@
   margin-right: 10px;
 }
 
-.mat-button.mat-button-disabled {
+/* TODO(mdc-migration): The following rule targets internal classes of button that may no longer apply for the MDC version. */
+.mat-mdc-button.mat-button-disabled {
   background-color: #fd6d9d;
   color: rgba(255, 255, 255, 0.50);
   

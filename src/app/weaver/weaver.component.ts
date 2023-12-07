@@ -3,7 +3,7 @@ import {enableProdMode} from '@angular/core';
 
 import { CdkScrollable, ScrollDispatcher } from '@angular/cdk/overlay';
 import { Render } from '../core/model/render';
-import { MatLegacyDialog as MatDialog } from "@angular/material/legacy-dialog";
+import { MatDialog } from "@angular/material/dialog";
 import {Subject} from 'rxjs';
 import { FileService } from '../core/provider/file.service';
 import * as _ from 'lodash';

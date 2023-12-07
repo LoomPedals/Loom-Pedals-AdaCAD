@@ -5,7 +5,7 @@ import { SubdraftComponent } from './subdraft/subdraft.component';
 import { MarqueeComponent } from './marquee/marquee.component';
 import { SnackbarComponent } from './snackbar/snackbar.component';
 import { Cell } from './../../core/model/cell';
-import {MatLegacySnackBar as MatSnackBar} from '@angular/material/legacy-snack-bar';
+import {MatSnackBar} from '@angular/material/snack-bar';
 import { Point, Interlacement, Bounds, DraftMap, Draft, NodeComponentProxy,DraftNode, OpNode, DraftNodeProxy } from '../../core/model/datatypes';
 import { InkService } from '../../mixer/provider/ink.service';
 import { LayersService } from '../../mixer/provider/layers.service';
