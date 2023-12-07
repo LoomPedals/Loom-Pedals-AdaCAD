@@ -62,7 +62,7 @@ export class MixerComponent implements OnInit {
 
    manual_scroll: boolean = false;
 
-  private unsubscribe$ = new Subject();
+  private unsubscribe$ = new Subject<void>();
 
   collapsed:boolean = false;
 

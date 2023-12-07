@@ -55,7 +55,7 @@ export class WeaverComponent implements OnInit {
 
   collapsed: boolean = false;
 
-  private unsubscribe$ = new Subject();
+  private unsubscribe$ = new Subject<void>();
 
   dims:any;
 
