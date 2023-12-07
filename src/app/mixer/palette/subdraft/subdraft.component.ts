@@ -7,7 +7,7 @@ import { OperationService } from '../../provider/operation.service';
 import { TreeService } from '../../provider/tree.service';
 import { FileService } from '../../../core/provider/file.service';
 import { ViewportService } from '../../provider/viewport.service';
-import { MatDialog, MatDialogRef } from '@angular/material/dialog';
+import { MatLegacyDialog as MatDialog, MatLegacyDialogRef as MatDialogRef } from '@angular/material/legacy-dialog';
 import { DraftdetailComponent } from '../../modal/draftdetail/draftdetail.component';
 import { Cell } from '../../../core/model/cell';
 import { OperationComponent } from '../operation/operation.component';

@@ -3,7 +3,7 @@ import { Bounds, Interlacement, Point,Operation, DynamicOperation,IOTuple, OpNod
 import utilInstance from '../../../core/model/util';
 import { OperationService, ServiceOp} from '../../provider/operation.service';
 import { OpHelpModal } from '../../modal/ophelp/ophelp.modal';
-import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MatLegacyDialog as MatDialog, MAT_LEGACY_DIALOG_DATA as MAT_DIALOG_DATA } from '@angular/material/legacy-dialog';
 import { FormControl} from '@angular/forms';
 import { ViewportService } from '../../provider/viewport.service';
 import { TreeService } from '../../provider/tree.service';
